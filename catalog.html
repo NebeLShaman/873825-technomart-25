@@ -7,7 +7,15 @@
   <body bgcolor="#a5d691">
     <header class="main-header">
       <a class="header-logo" href="index.html"><img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип магазина Техномарт, нажав на который, Вы можете перейти на главную страницу"></a>
-      <a class="search" href="search.html" aria-label="Поиск по сайту">Поиск</a>
+      <h2 class="visually-hidden">Форма для поиска по сайту</h2>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post" area-label="Поле для ввода критериев поиска">
+        <p>
+          <label>
+            <button class="button-search" type="submit" area-label="Показать результаты поиска"></button>
+            Поиск:<input type="text" name="search-item">
+          </label>
+        </p>
+      </form>
       <ul class="user-navigation">
         <li class="marker"> <a href="marker.html" area-label="Сохраненные, выбранные ранее товары">Закладки:0</a></li>
         <li class="basket"><a href="basket.html" area-label="Товары, готовые к покупке">Корзина:10</a></li>
@@ -17,8 +25,8 @@
       <address class="head-contacts">г.Санкт-Петербург, ул. Б.Конюшенная,д.19/8</address>
       <a href="tel:+7(812)555-05-55" area-label="Контактный номер телефона">+7(812)555-05-55</a>
       <ul class="personal-area-section">
-        <li class="current-user">Равшан Джамшутович</li>
-        <li class="unlogin-link-user"><button class="button" type="button" area-label="Разлогиниться"></button></li>
+        <li class="current-user"><a href="personal-area.html" area-label="Перейти в личный кабинет">Равшан Джамшутович</a></li>
+        <li class="unlogin-link-user"><a href="nlogin-user.html" area-label="Деавторизовтаься на сайте">Разлогиниться</a></li>
         <li class="order-user"><a href="order-user.html" area-label="Перейти к истории заказов">Мои заказы</a></li>
         <li class="personal-area"><a href="personal-area.html" area-label="Перейти в личный кабинет">Личный кабинет</a></li>
       </ul>
