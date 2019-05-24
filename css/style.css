@@ -1,0 +1,265 @@
+
+/*------------------------------all------------------------------*/
+
+body {
+  margin: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
+  background-size: 3150 1200;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.site-navigation a,
+.foother-navigation-site a,
+.marker a,
+.basket a,
+.order a,
+.login-link a,
+.registration-link a{
+color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color:#ee3643;
+
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ca2c37;
+}
+
+
+.button:active {
+  background-color: #ca2c37;
+}
+
+
+.site-navigation,
+.login-section,
+.user-navigation,
+.promo-list,
+.footer-social,
+.foother-navigation-site,
+.foother-navigation-offers {
+  list-style:none;
+}
+
+/*------------------------------header------------------------------*/
+.search-form input {
+  background-color: #293449;
+  border: 0;
+
+  background-color: transparent;
+}
+
+input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.search-form input:focus {
+  color:#ffffff;
+}
+
+.header-block{
+  background-color: #293449;
+}
+
+.user-navigation .order {
+  background-color: #63a63e;
+}
+
+.header-logo {
+  background-color: #ee3643;
+  width: 220px;
+  height: 42px;
+  box-shadow: 0px 5px 0px 0px #b52933;
+}
+
+h1 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+  width:195px;
+}
+
+.main-navigation {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+
+  width: 940px;
+  height: 55px;
+  box-shadow: 0px 5px 0px 0px #293449;
+  display:table;
+
+  background-color: #32425c;
+}
+
+.site-navigation a:hover {
+  background-color: #293449;
+}
+
+.site-navigation a:focus {
+  color: #868c95;
+  background-color: #1d2739;
+}
+
+.contacts-header a {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.head-contacts {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color:#32425c;
+}
+
+
+
+/*------------------------------main------------------------------*/
+
+
+
+
+/*------------------------------foother------------------------------*/
+.footer-logo {
+  background-color: #ee3643;
+  width: 220px;
+  height: 63px;
+  box-shadow: 0px 5px 0px 0px #b52933;
+}
+
+
+
+
+.foother-contacts a {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.foother-contacts {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color:#ffffff;
+}
+
+.footer-top {
+  background-color: #32425c;
+}
+
+.footer-bot {
+  background-color: #293449;
+}
+
+.foother-navigation-site a {
+  font-size: 18;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.foother-navigation-offers a {
+  font-size: 18;
+  line-height: 24px;
+  color: #f5ca7e;
+}
+
+.foother-navigation-site a:active {
+  color:#9ea5af;
+  text-decoration: none;
+}
+
+.foother-navigation-offers a:active {
+  color:#ad956f;
+  text-decoration: none;
+}
+
+.foother-navigation-site a:hover,
+.foother-navigation-offers a:hover {
+  text-decoration:underline;
+}
+
+.other-information {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.social-button {
+  text-align: center;
+}
+
+.social-button ul {
+  list-style: none;
+}
+
+.social-button {
+color:#ffffff;
+}
+
+
+.feedback,
+.footer-copyright {
+  color:#ffffff;
+}
+
+.feedback a,
+.footer-copyright a {
+  color:#f5ca7e;
+}
+
+.feedback a:hover,
+.footer-copyright a:hover {
+  text-decoration:underline;
+}
+
+.feedback a:active,
+.footer-copyright a:active {
+  color:#ee3643;
+  text-decoration: none;
+}
