@@ -63,11 +63,9 @@ h2 {
   background-color: #ca2c37;
 }
 
-
 .button:active {
   background-color: #ca2c37;
 }
-
 
 .site-navigation,
 .login-section,
@@ -155,9 +153,6 @@ h1 {
   line-height: 24px;
   color:#32425c;
 }
-
-
-
 /*------------------------------main------------------------------*/
 
 
@@ -170,9 +165,6 @@ h1 {
   height: 63px;
   box-shadow: 0px 5px 0px 0px #b52933;
 }
-
-
-
 
 .foother-contacts a {
   font-family: "Cuprum", Arial, sans-serif;
@@ -241,7 +233,6 @@ h1 {
 .social-button {
 color:#ffffff;
 }
-
 
 .feedback,
 .footer-copyright {
