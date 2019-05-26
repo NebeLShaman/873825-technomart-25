@@ -283,7 +283,7 @@ h1 {
   text-transform: uppercase;
 }
 
- .sorting-item:disabled+label {
+ .sorting-item:disabled + label {
   color: #999999;
 
   opacity: 0.5;
