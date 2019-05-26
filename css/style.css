@@ -251,7 +251,11 @@ h1 {
   color:#32425c;
 }
 /*------------------------------main------------------------------*/
+.shop-catalog-puncher {
+  padding: 0;
+  margin: 0;
 
+}
 .breadcrumbs {
   text-transform: uppercase;
   font-size: 13px;
@@ -301,6 +305,7 @@ h1 {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   text-align: center;
+  margin: 0;
 }
 
 .old-price {
@@ -311,6 +316,7 @@ h1 {
 }
 
 .actual-price {
+  display: block;
   font-size: 17px;
   line-height: 18px;
   color:#ffffff;
@@ -319,6 +325,10 @@ h1 {
   width: 141px;
   height: 38px;
   background-color: #ee3643;
+
+  padding-top:10px;
+  padding-bottom: 0px;
+  margin: 0;
 }
 
 .catalog-item:hover{
