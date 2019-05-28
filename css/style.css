@@ -1,4 +1,3 @@
-
 /*------------------------------all------------------------------*/
 
 body {
@@ -10,7 +9,6 @@ body {
   color: #000000;
 
   background-color: #ffffff;
-  background-size: 3150 1200;
 }
 
 .visually-hidden {
@@ -32,7 +30,7 @@ body {
   color: #ffffff;
 }
 
-h2 {
+.headline+section {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
@@ -46,7 +44,7 @@ h2 {
   text-transform: uppercase;
   color: #ffffff;
 
-  background-color:#ee3643;
+  background-color: #ee3643;
 
   border: none;
   border-radius: 2px;
@@ -62,17 +60,20 @@ h2 {
 .button:active {
   background-color: #ca2c37;
 }
+
 .no-list-style {
-  list-style:none;
+  list-style: none;
 }
 
 .button-green {
   background-color: #63a63e;
   box-shadow: 0px 3px 0px 0px #367315;
 }
+
 .button-green:hover {
   background-color: #5fbb2d;
 }
+
 .button-green:active {
   background-color: #518534;
   box-shadow: none;
@@ -90,7 +91,7 @@ h2 {
 }
 
 .button-clear:active {
-  color:#d0d2d6;
+  color: #d0d2d6;
   background-color: #ffffff;
   border: 3px solid #c1c6ce;
 }
@@ -108,20 +109,20 @@ input::-webkit-input-placeholder {
 }
 
 .search-form input:focus {
-  color:#ffffff;
+  color: #ffffff;
 }
 
-.header-block{
+.header-block {
   background-color: #293449;
 }
 
 .header-logo {
-  background-color: #ee3643;
-  width: 110px;
   height: 20px;
   box-shadow: 0px 5px 0px 0px #b52933;
   display: inline-block;
-  padding:13px 55px 11px;
+  padding: 13px 55px 11px;
+  background-color: #ee3643;
+  width: 110px;
 }
 
 
@@ -133,14 +134,14 @@ input::-webkit-input-placeholder {
   display: block;
   background-color: #63a63e;
   display: inline-block;
-  padding:13px 20px 15px;
+  padding: 13px 20px 15px;
   margin-left: 0;
 }
 
 .full {
   display: block;
   background-color: #ee3643;
-  padding:13px 20px 15px 50px;
+  padding: 13px 20px 15px 50px;
   margin: 0;
   width: 74px;
   height: 15px;
@@ -182,13 +183,13 @@ input::-webkit-input-placeholder {
   color: #cacaca;
 }
 
-h1 {
+.main-headline {
   font-family: "Cuprum", Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
-  width:195px;
+  width: 195px;
 }
 
 .login-section a {
@@ -216,7 +217,7 @@ h1 {
 
   width: 940px;
   box-shadow: 0px 5px 0px 0px #293449;
-  display:inline-block;
+  display: inline-block;
   margin-left: 130px;
   margin-right: 130px;
   background-color: #32425c;
@@ -248,14 +249,10 @@ h1 {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  color:#32425c;
+  color: #32425c;
 }
-/*------------------------------main------------------------------*/
-.shop-catalog-puncher {
-  padding: 0;
-  margin: 0;
 
-}
+/*------------------------------main------------------------------*/
 .breadcrumbs {
   text-transform: uppercase;
   font-size: 13px;
@@ -290,11 +287,11 @@ h1 {
   text-transform: uppercase;
 }
 
- .sorting-item:disabled + label {
+.sorting-item:disabled+label {
   color: #999999;
 
   opacity: 0.5;
- }
+}
 
 .catalog-item {
   font-size: 18px;
@@ -311,27 +308,27 @@ h1 {
 .old-price {
   font-size: 17px;
   line-height: 18px;
-  color:#999999;
-  text-decoration:line-through;
+  color: #999999;
+  text-decoration: line-through;
 }
 
 .actual-price {
   display: block;
   font-size: 17px;
   line-height: 18px;
-  color:#ffffff;
+  color: #ffffff;
   text-align: center;
 
   width: 141px;
   height: 38px;
   background-color: #ee3643;
 
-  padding-top:10px;
+  padding-top: 10px;
   padding-bottom: 0px;
   margin: 0;
 }
 
-.catalog-item:hover{
+.catalog-item:hover {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -346,7 +343,7 @@ h1 {
   width: 138px;
   height: 23px;
   box-shadow: 0px 5px 0px 0px #b52933;
-  padding:20px 40px;
+  padding: 20px 40px;
 }
 
 .foother-contacts a {
@@ -361,7 +358,7 @@ h1 {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .footer-top {
@@ -370,7 +367,7 @@ h1 {
 
 .footer-bot {
   background-color: #293449;
- }
+}
 
 .foother-navigation-offers {
   margin: 0;
@@ -395,18 +392,18 @@ h1 {
 }
 
 .foother-navigation-site a:active {
-  color:#9ea5af;
+  color: #9ea5af;
   text-decoration: none;
 }
 
 .foother-navigation-offers a:active {
-  color:#ad956f;
+  color: #ad956f;
   text-decoration: none;
 }
 
 .foother-navigation-site a:hover,
 .foother-navigation-offers a:hover {
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 .other-information {
@@ -421,28 +418,27 @@ h1 {
   list-style: none;
   text-align: center;
   text-decoration: none;
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .feedback,
 .footer-copyright {
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .feedback a,
 .footer-copyright a {
-  color:#f5ca7e;
+  color: #f5ca7e;
   text-decoration: none;
 }
 
 .feedback a:hover,
 .footer-copyright a:hover {
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 .feedback a:active,
 .footer-copyright a:active {
-  color:#ee3643;
+  color: #ee3643;
   text-decoration: none;
 }
-
