@@ -1,20 +1,20 @@
 /*------------------------------all------------------------------*/
 
-/*body>* {*/
-  /*background: rgba(255, 0, 0, 0.3);*/
-/*}*/
+body>* {
+  background: rgba(255, 0, 0, 0.3);
+}
 
-/*body>*>* {*/
-  /*background: rgba(255, 255, 0, 0.3);*/
-/*}*/
+body>*>* {
+  background: rgba(255, 255, 0, 0.3);
+}
 
-/*body>*>*>* {*/
-  /*background: rgba(0, 0, 255, 0.3);*/
-/*}*/
+body>*>*>* {
+  background: rgba(0, 0, 255, 0.3);
+}
 
-/*body>*>*>*>* {*/
-  /*background: rgba(0, 255, 255, 0.3);*/
-/*}*/
+body>*>*>*>* {
+  background: rgba(0, 255, 255, 0.3);
+}
 
 
 
@@ -157,7 +157,7 @@ body {
   background-color: #f1f5f7;
 
   margin-bottom: 0;
-  min-height: 280px;
+  min-height: 320px;
 }
 
 .header-logo {
@@ -298,12 +298,25 @@ input::-webkit-input-placeholder {
   list-style: none;
 }
 
+.current-user {
+  display: block;
+  width: 300px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
 .current-user a {
+  display: block;
   color: #000000;
   background-color: #ffffff;
   font-size: 21px;
   line-height: 21px;
   text-decoration: none;
+
 }
 
 .current-user a:hover {
@@ -315,9 +328,30 @@ input::-webkit-input-placeholder {
 }
 
 .personal-area-section {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
+}
+
+.unlogin-link-user {
+  display: none;
+  position: absolute;
+}
+
+.order-user {
+  display: flex;
+}
+
+.personal-area {
+  display: flex;
 }
 
 .order-user a,
@@ -354,9 +388,10 @@ input::-webkit-input-placeholder {
 }
 
 .login-section {
+  box-sizing: border-box;
   display: flex;
   width: 300px;
-  margin: 0 10px;
+  margin-left: auto;
   align-items: center;
   /*margin-top: 47px;*/
 }
@@ -364,18 +399,16 @@ input::-webkit-input-placeholder {
 .login-link {
   width: 120px;
   text-align: center;
-
-
 }
 
 .registration-link {
   width: 160px;
-   text-align: center;
+  text-align: center;
 }
 
 
 .login-section a {
-  display: block;
+  display: inline-block;
   font-family: "Cuprum", Arial, sans-serif;
   color: #000000;
   background-color: #ffffff;
@@ -441,7 +474,9 @@ input::-webkit-input-placeholder {
 }
 
 .contacts-header {
+  box-sizing: border-box;
   width: 300px;
+  margin-left: 20px;
   padding-top: 60px;
   padding-left: 10px;
   padding-right: 40px;
@@ -484,11 +519,15 @@ input::-webkit-input-placeholder {
   list-style: none;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs a {
   color: #000000;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -512,6 +551,25 @@ input::-webkit-input-placeholder {
   display: flex;
   flex-direction: column;
   width: 220px;
+}
+
+.filteres {
+  display: block;
+  text-transform: uppercase;
+
+  margin: 0;
+  padding: 0;
+  min-height: 38px;
+  width: 220px;
+}
+
+.filteres-list {
+  display: block;
+}
+
+.sorting-headline {
+  display: block;
+  width: 700px;
 }
 
 .sorting fieldset,
@@ -556,10 +614,12 @@ input::-webkit-input-placeholder {
   margin-right: 20px;
   margin-bottom: 22px;
   width: 220px;
-  height: 315px;
+  min-height: 318px;
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   text-align: center;
+  justify-content: space-between;
+  margin-bottom: 52px;
 }
 
 .catalog-item:nth-child(3n) {
@@ -595,14 +655,39 @@ input::-webkit-input-placeholder {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 
+.pagination-list {
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+
+  min-height: 38px;
+  width: 300px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
 .pagination-list a {
   text-decoration: none;
 }
 
-.service {
+.section-service {
+  display: flex;
   background-color: #f1f5f7;
+  min-height: 260px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
   margin: 0;
+  padding: 0;
 }
+
+/*.service {*/
+/*background-color: #f1f5f7;*/
+/*margin: 0;*/
+/*min-height: 260px;*/
+/*}*/
 
 .wraper-ransport-company-partners {
   display: flex;
