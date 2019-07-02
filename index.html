@@ -71,45 +71,62 @@
   </header>
   <main class="container">
     <section class="promo">
-      <ul class="promo-list no-list-style">
-        <li class="promo-list-item-new">
-          <h3 class="promo-headline">Материалы</h3>
-          <a class="button" href="materials.html" area-label="Каталог строительных материалов">На любой вкус</a>
-        </li>
-        <li class="promo-list-item">
-          <h3 class="promo-headline">Интсрумент</h3>
-          <a class="button" href="tool.html" area-label="Каталог инструментов">На все случаи жизни</a>
-        </li>
-        <li>
-          <h3 class="promo-headline">Техника</h3>
-          <a class="button" href="mechanism.html" area-label="Каталог техники">Для стройки</a>
-        </li>
-        <li class="promo-list-item">
-          <h3 class="promo-headline">Скидки 50%</h3>
-          <a class="button" href="catalog-popular.html" area-label="Каталог товаров со скидкой">На 350 товаров</a>
-        </li>
-        <li>
-          <h3 class="promo-headline">Доставка</h3>
-          <a class="button" href="delivery.html" area-label="Оформление доставки">Бесплатно</a>
-        </li>
-      </ul>
-      <ul class="slider-first">
-        <li class="slider-first-1">
-          <h3 class="slider-first-headline">Дрели</h3>
-          <p>Соседям на радость!</p>
-          <a class="button" href="catalog.html" area-label="Каталог товаров">Открыть каталог</a>
-        </li>
-        <li class="slider-first-2">
-          <h3 class="slider-first-headline">Перфораторы</h3>
-          <p>Настоящие мужские игрушки</p>
-          <a class="button" href="catalog.html" area-label="Каталог товаров">Открыть каталог</a>
-        </li>
-      </ul>
-      <button class="button-back" type="button" aria-label="Перейти на следующий слайд"></button>
-      <!-- <span class="slider-first-arr slider-first-arr-prev"></span> -->
-      <button calass="button-next" type="button" aria-label="Перейти на предыдущий слайд"></button>
-      <!-- <span class="slider-first-arr slider-first-arr-next"></span> -->
+      <div class="promo-wraper">
+        <ul class="promo-list no-list-style">
+          <li class="promo-list-item materials">
+            <div class="promo-list-item-wraper">
+              <h3 class="promo-headline">Материалы</h3>
+              <a class="button" href="materials.html" area-label="Каталог строительных материалов">На любой вкус</a>
+            </div>
+            <div class="image"> <img src="img/promo-materials.svg" alt="Схематичное изображение материалов"></div>
+          </li>
+          <li class="promo-list-item tool">
+            <div class="promo-list-item-wraper">
+              <h3 class="promo-headline">Интсрумент</h3>
+              <a class="button" href="tool.html" area-label="Каталог инструментов">На все случаи</a>
+            </div>
+            <div class="image"> <img src="img/promo-tool.svg" alt="Схематичное изображение инструментов"></div>
+          </li>
+          <li class="promo-list-item mechanism">
+            <div class="promo-list-item-wraper">
+              <h3 class="promo-headline">Техника</h3>
+              <a class="button" href="mechanism.html" area-label="Каталог техники">Для стройки</a>
+            </div>
+            <div class="image"> <img src="img/promo-mechanism.svg" alt="Схематичное изображение техники"></div>
+          </li>
+          <li class="promo-list-item sale">
+            <div class="promo-list-item-wraper">
+              <h3 class="promo-headline">Скидки 50%</h3>
+              <a class="button" href="sale.html" area-label="Каталог товаров со скидкой">На 350 товаров</a>
+            </div>
+            <div class="image"> <img src="img/promo-sale.svg" alt="Схематичное изображение скидки"></div>
+          </li>
+          <li class="promo-list-item delivery">
+            <div class="promo-list-item-wraper">
+              <h3 class="promo-headline">Доставка</h3>
+              <a class="button" href="delivery.html" area-label="Оформление доставки">Бесплатно</a>
+            </div>
+            <div class="image"> <img src="img/promo-delivery.svg" alt="Схематичное изображение доставки"></div>
+          </li>
+        </ul>
+        <ul class="slider-first">
+          <li class="slider-first-1">
+            <h3 class="slider-first-headline">Дрели</h3>
+            <p>Соседям на радость!</p>
+            <a class="button" href="catalog.html" area-label="Каталог товаров">Открыть каталог</a>
+          </li>
+          <li class="slider-first-2">
+            <h3 class="slider-first-headline">Перфораторы</h3>
+            <p>Настоящие мужские игрушки</p>
+            <a class="button" href="catalog.html" area-label="Каталог товаров">Открыть каталог</a>
+          </li>
+        </ul>
+        <button class="button-back" type="button" aria-label="Перейти на следующий слайд"></button>
+        <!-- <span class="slider-first-arr slider-first-arr-prev"></span> -->
+        <button calass="button-next" type="button" aria-label="Перейти на предыдущий слайд"></button>
+        <!-- <span class="slider-first-arr slider-first-arr-next"></span> -->
     </section>
+    </div>
     <section class="popular-goods">
       <div class="popular-wraper">
         <div class="container-headline">

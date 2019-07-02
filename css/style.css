@@ -106,58 +106,6 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.button-green {
-  font-family: "Cuprum", Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
-  font: inherit;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-
-  border: none;
-  border-radius: 2px;
-
-  color: #ffffff;
-  background-color: #63a63e;
-  box-shadow: 0px 3px 0px 0px #367315;
-}
-
-.button-green:hover {
-  background-color: #5fbb2d;
-}
-
-.button-green:active {
-  background-color: #518534;
-  box-shadow: none;
-}
-
-.button-clear {
-  font-family: "Cuprum", Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
-  font: inherit;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-
-  color: #49556b;
-  background-color: #ffffff;
-  border: 3px solid #63a63e;
-}
-
-.button-clear:hover {
-  background-color: #ffffff;
-  border: 3px solid #32425c;
-}
-
-.button-clear:active {
-  color: #d0d2d6;
-  background-color: #ffffff;
-  border: 3px solid #c1c6ce;
-}
 
 /*------------------------------header------------------------------*/
 .block-wrapper {
@@ -430,6 +378,13 @@ input::-webkit-input-placeholder {
   text-align: center;
 }
 
+.login-section .registration-link {
+  margin-left: 10px;
+}
+
+.login-section .login-link {
+  margin-left: 40px;
+}
 
 .login-section a {
   display: inline-block;
@@ -534,6 +489,113 @@ input::-webkit-input-placeholder {
 
 /*------------------------------main------------------------------*/
 /*----------------------index-------------------------------*/
+.promo-wraper {
+  background-color: yellow;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*  flex-direction: column;*/
+  margin: 0;
+  padding: 0;
+}
+
+.promo-headline {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.promo-list {
+  background-color: green;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-top: 60px;
+  margin-bottom: 53px;
+}
+
+.promo-list-item {
+  position: relative;
+  display: flex;
+  width: 300px;
+  min-height: 123px;
+  box-sizing: border-box;
+  border: none;
+
+
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+
+
+}
+
+.promo-list-item-wraper {
+  /*  background-color: red;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+  margin: 0;
+
+}
+
+.promo-list-item .image {
+  /* background-color: yellow;*/
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.promo-list-item a {
+  /*  display: inline-block;
+*/
+  background-color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+
+  width: 135px;
+
+}
+
+.promo-list-item a:hover {
+  background-color: #cccccc;
+}
+
+.promo-list-item a:active {
+  background-color: #b2b2b2;
+}
+
+.materials {
+  background-color: #ffbf47;
+}
+
+.tool {
+  background-color: #3bbce3;
+}
+
+.mechanism {
+  background-color: #dc91d8;
+}
+
+.sale {
+  background-color: #8ed78f;
+}
+
+.delivery {
+  background-color: #ffc047;
+}
+
 .popular-wraper {
   margin: 0;
   margin-bottom: 20px;
@@ -676,8 +738,52 @@ input::-webkit-input-placeholder {
   display: none;
 }
 
+.catalog-item .buy::before {
+  content: "";
+  position: absolute;
+
+  top: 49px;
+  left: 56px;
+
+  width: 16px;
+  height: 18px;
+
+  background-image: url("img/basket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  background-color: #ff0000;
+
+  opacity: 0.3;
+}
+
+
+
 .catalog-item:hover .actions {
   display: block;
+}
+
+.catalog-item:hover .actions:hover .buy:hover {
+  background-color: #5fbb2d;
+  border: 3px solid #5fbb2d;
+
+  border-bottom-color: #63a63e;
+}
+
+.catalog-item:hover .actions:hover .buy:active {
+  background-color: #518534;
+  border: none;
+}
+
+
+.catalog-item:hover .actions:hover .bookmark:hover {
+  color: #32425c;
+  border: 3px solid #32425c;
+}
+
+.catalog-item:hover .actions:hover .bookmark:active {
+  color: #c1c6ce;
+  border: 3px solid #c1c6ce;
 }
 
 .catalog-item .image {
@@ -773,6 +879,11 @@ input::-webkit-input-placeholder {
   justify-content: space-around;
 }
 
+/*.brands a:actve {
+  opacity: 0.3;
+
+}*/
+
 .brands {
   margin: 0;
   margin-bottom: 20px;
@@ -790,6 +901,9 @@ input::-webkit-input-placeholder {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 
+.brands:active {
+  opacity: 0.3;
+}
 
 
 
