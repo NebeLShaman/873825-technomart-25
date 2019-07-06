@@ -39,41 +39,65 @@
         <a href="tel:+7(812)555-05-55" area-label="Контактный номер телефона">+7(812)555-05-55</a>
         <address class="head-contacts">г.Санкт-Петербург, ул. Б.Конюшенная,д.19/8</address>
       </div>
-      <ul class="personal-area-section no-list-style">
-        <li class="current-user"><a href="personal-area.html" area-label="Перейти в личный кабинет">Равшан Джамшутович</a></li>
-        <li class="unlogin-link-user"><a href="nlogin-user.html" area-label="Деавторизовтаься на сайте">Разлогиниться</a></li>
-        <li class="order-user"><a href="order-user.html" area-label="Перейти к истории заказов">Мои заказы</a></li>
-        <li class="personal-area"><a href="personal-area.html" area-label="Перейти в личный кабинет">Личный кабинет</a></li>
-      </ul>
+      <div class="personal-area-section no-list-style">
+        <div class="current-user">
+          <a href="personal-area.html" area-label="Перейти в личный кабинет">Равшан Джамшутович</a>
+          <div class="unlogin-link-user">
+            <a href="unlogin-user.html" area-label="Деавторизовтаься на сайте">Разлогиниться</a>
+          </div>
+        </div>
+        <div class="user-navigation-catalog">
+          <a href="order-user.html" area-label="Перейти к истории заказов">Мои заказы</a>
+          <a href="personal-area.html" area-label="Перейти в личный кабинет">Личный кабинет</a>
+        </div>
+      </div>
     </div>
     <div class="container">
       <nav class="main-navigation">
         <ul class="site-navigation no-list-style color-white">
-          <li><a href="index.html" area-label="Главная страница">Главная</a></li>
-          <li><a href="company.html" area-label="Подробная информация о компании">Комапания</a></li>
-          <li><a href="catalog.html" area-label="Каталог предлагаемых товаров">Катаолог</a></li>
-          <li><a href="news.html" area-label="Последнии новости компании">Новости</a></li>
-          <li><a href="special-offers.html" area-label="Перечень специальных предложений">Спецпредложения</a></li>
-          <li><a href="delivery.html" area-label="Подробная инфомрация о доставке">Доставка</a></li>
-          <li><a href="contacts.html" area-label="Контактная информация">Контакты</a></li>
+          <li>
+            <a href="index.html" area-label="Главная страница">Главная</a>
+          </li>
+          <li>
+            <a href="company.html" area-label="Подробная информация о компании">Комапания</a>
+          </li>
+          <li>
+            <a href="catalog.html" area-label="Каталог предлагаемых товаров">Катаолог</a>
+          </li>
+          <li>
+            <a href="news.html" area-label="Последнии новости компании">Новости</a>
+          </li>
+          <li>
+            <a href="special-offers.html" area-label="Перечень специальных предложений">Спецпредложения</a>
+          </li>
+          <li>
+            <a href="delivery.html" area-label="Подробная инфомрация о доставке">Доставка</a>
+          </li>
+          <li>
+            <a href="contacts.html" area-label="Контактная информация">Контакты</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
-  <main class="container">
-    <ul class="breadcrumbs">
+  <main>
+    <ul class="breadcrumbs container">
       <li><a href="index.html" area-label="Главная страница">Главная</a></li>
       <li><a href="catalog.html" area-label="Каталог предлагаемых товаров">Катаолог</a></li>
       <li><a href="tool.html" area-label="Каталог инструментов">Интсрумент</a></li>
       <li class="breadcrumbs-current" area-label="Текущий каталог перфораторов">Перфораторы</li>
     </ul>
-    <h2 class="shop-headline headline">Перфораторы</h2>
-    <section class="sorting-wraper">
-      <div class="filteres-list">Фильтр:</div>
-      <!-- Место для формы -->
-      <div class="sorting-headline">Сортировка</div>
-    </section>
-    <div class="catalog-all-items">
+    <div class="container">
+      <h2 class="shop-headline headline contain">Перфораторы</h2>
+    </div>
+    <div class="container">
+      <section class="sorting-wraper">
+        <div class="filteres-list">Фильтр:</div>
+        <!-- Место для формы -->
+        <div class="sorting-headline">Сортировка</div>
+      </section>
+    </div>
+    <div class="catalog-all-items container">
       <div class="choice">
         <!-- <div> -->
         <div class="filteres-cost">
@@ -179,7 +203,8 @@
               <a class="bookmark" href="marker.html" area-label="Добваление выбранного товара в закладки">В закладки</a>
             </div>
           </li>
-          <li class="catalog-item new">
+          <li class="catalog-item">
+            <div class="flag flag-new">новинка</div>
             <div class="image">
               <img src="img/goods-item-2.jpg" width="218" height="170" alt="Изображение перфоратора BOSCH BFG 6000">
             </div>
@@ -203,7 +228,8 @@
               <a class="bookmark" href="marker.html" area-label="Добваление выбранного товара в закладки">В закладки</a>
             </div>
           </li>
-          <li class="catalog-item new">
+          <li class="catalog-item">
+            <div class="flag flag-new">новинка</div>
             <div class="image">
               <img src="img/goods-item-2.jpg" width="218" height="170" alt="Изображение перфоратора BOSCH BFG 3000">
             </div>
@@ -242,18 +268,22 @@
     </ul>
     </section>
     </div>
-    <ul class="pagination-list no-list-style">
-      <li class="pagination-item">1</li>
-      <li class="pagination-item"><a href="#" area-label="Перейти на страницу 2">2</a></li>
-      <li class="pagination-item"><a href="#" area-label="Перейти на страницу 3">3</a></li>
-      <li class="pagination-item"><a href="#" area-label="Перейти на следующую страницу">Следующая</a></li>
-    </ul>
+    <div class="container">
+      <ul class="pagination-list no-list-style">
+        <li class="pagination-item">1</li>
+        <li class="pagination-item"><a href="#" area-label="Перейти на страницу 2">2</a></li>
+        <li class="pagination-item"><a href="#" area-label="Перейти на страницу 3">3</a></li>
+        <li class="pagination-item"><a href="#" area-label="Перейти на следующую страницу">Следующая</a></li>
+      </ul>
+    </div>
     <div class="section-service-wraper">
-      <section class="section-service">
-        <h2 class="headline service">Пара слов о перфораторах</h2>
-        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-      </section>
+      <div class="container">
+        <section class="section-service">
+          <h2 class="headline service">Пара слов о перфораторах</h2>
+          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        </section>
+      </div>
     </div>
   </main>
   <footer class="main-footer">

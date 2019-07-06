@@ -116,7 +116,7 @@ input[type="radio"].visually-hidden {
 .block-wrapper {
   width: 100%;
   background-color: #293449;
-  margin-bottom: 0px;
+  margin-bottom: 45px;
 }
 
 .container {
@@ -132,7 +132,6 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   background-color: #f1f5f7;
-
   margin-bottom: 60px;
   padding-bottom: 60px;
 }
@@ -194,6 +193,7 @@ input::-webkit-input-placeholder {
   min-height: 42px;
   display: flex;
 }
+
 
 .user-navigation {
   display: flex;
@@ -276,24 +276,28 @@ input::-webkit-input-placeholder {
 }
 
 .current-user {
-  display: block;
+  display: flex;
   width: 300px;
-  height: 45px;
+  /*  height: 45px;
+*/
+  margin: 0;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  margin: 0;
   padding: 0;
+  margin-bottom: 8px;
+
 }
 
 .current-user a {
   display: block;
+  /*  min-height: 45px;
+*/
   color: #000000;
   background-color: #ffffff;
   font-size: 21px;
   line-height: 21px;
   text-decoration: none;
-
+  padding: 10px 70px 10px 44px;
 }
 
 .current-user a:hover {
@@ -306,11 +310,14 @@ input::-webkit-input-placeholder {
 
 .personal-area-section {
   display: flex;
+  flex-direction: column;
   width: 300px;
   align-items: center;
-  justify-content: space-around;
+  /*  justify-content: space-around;
+*/
   margin: 0;
   padding: 0;
+  margin-left: 20px;
 
 
   font-family: "Cuprum", Arial, sans-serif;
@@ -323,29 +330,34 @@ input::-webkit-input-placeholder {
   position: absolute;
 }
 
-.order-user {
+/*.order-user {
   display: flex;
 }
 
 .personal-area {
   display: flex;
+}*/
+
+.user-navigation-catalog {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  /*  justify-content: space-between;
+*/
 }
 
-.order-user a,
-.personal-area a {
+.user-navigation-catalog a {
   font-family: "Cuprum", Arial, sans-serif;
   color: #32425c;
   font-size: 16px;
   line-height: 18px;
 }
 
-.order-user a:hover,
-.personal-area a:hover {
+.user-navigation-catalog a:hover {
   color: #ee3643;
 }
 
-.order-user a:active,
-.personal-area a:active {
+.user-navigation-catalog a:active {
   color: #cacaca;
 }
 
@@ -359,9 +371,9 @@ input::-webkit-input-placeholder {
   color: #ee3643;
   font-weight: normal;
   width: 300px;
-  /*height: 158px;*/
   margin: 0;
-  padding: 55px 40px 44px 53px;
+  padding-right: 40px;
+  padding-left: 53px;
 }
 
 .login-section {
@@ -369,8 +381,6 @@ input::-webkit-input-placeholder {
   display: flex;
   width: 300px;
   margin-left: auto;
-  align-items: center;
-  /*margin-top: 47px;*/
 }
 
 .login-link {
@@ -392,7 +402,7 @@ input::-webkit-input-placeholder {
 }
 
 .login-section a {
-  display: inline-block;
+  display: block;
   font-family: "Cuprum", Arial, sans-serif;
   color: #000000;
   background-color: #ffffff;
@@ -400,6 +410,8 @@ input::-webkit-input-placeholder {
   line-height: 45px;
   text-decoration: none;
   height: 45px;
+  margin: 0;
+  padding: 0;
 }
 
 .login-section a:hover {
@@ -459,10 +471,14 @@ input::-webkit-input-placeholder {
   position: relative;
   width: 300px;
   margin-left: 20px;
-  padding-top: 60px;
+  margin-top: 10px;
+  /*  padding-top: 60px;
+*/
   padding-left: 10px;
   padding-right: 40px;
-  padding-bottom: 44px;
+  margin-bottom: 47px;
+  /*  padding-bottom: 44px;
+*/
 }
 
 
@@ -474,17 +490,17 @@ input::-webkit-input-placeholder {
   text-decoration: none;
   padding: 5.5px 55px 5.5px 50px;
 
-/*  padding-left: 60px;
+  /*  padding-left: 60px;
   padding-right: 50px;*/
 
   border: 3px solid #ffffff;
 }
 
-.contacts-header::before{
+.contacts-header::before {
   content: "";
   position: absolute;
 
-  top: 60px;
+  top: 0px;
   left: 35px;
 
   width: 20px;
@@ -496,17 +512,19 @@ input::-webkit-input-placeholder {
   background-position: 0 0;
 }
 
+
 .head-contacts {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
   margin-top: 10px;
+
 }
 
 .wraper-headline {
   display: flex;
-  width: 940px;
+  width: 960px;
   justify-content: space-between;
   margin-bottom: 0;
 }
@@ -520,7 +538,7 @@ input::-webkit-input-placeholder {
 }
 
 .wrapper-promo {
-  width: 940px;
+  width: 960px;
   display: flex;
   flex-direction: column;
 }
@@ -550,7 +568,7 @@ input::-webkit-input-placeholder {
   width: 300px;
   height: 120px;
   margin-right: 20px;
-/*  padding-left: 20px;
+  /*  padding-left: 20px;
   padding-right: 20px;*/
   justify-content: space-around;
   align-items: center;
@@ -565,7 +583,7 @@ input::-webkit-input-placeholder {
   margin-top: 0;
 }
 
- .item-text a {
+.item-text a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -583,10 +601,10 @@ input::-webkit-input-placeholder {
 }
 
 .item-img {
-   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-/*  width: 45%;*/
+  /*  width: 45%;*/
 }
 
 .slider {
@@ -645,7 +663,7 @@ input::-webkit-input-placeholder {
   margin: 0;
   margin-left: auto;
   margin-right: 20px;
-  padding: 13px 55px 15px;
+  padding: 5px 55px 5px;
 }
 
 .popular-goods-list {
@@ -906,12 +924,31 @@ input::-webkit-input-placeholder {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-bottom: 85px;
+}
+
+.service-test-wrapper {
+  width: 100%;
+  background-color: #f1f5f7;
+  margin-bottom: 45px;
+}
+
+.service-test-container {
+  background-color: red;
+}
+
+.slider-second-headline {
+  font-family: "Cuprum", Arial, sans-serif;
+  ;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
 }
 
 /*.brands a:actve {
   opacity: 0.3;
-
+s
 }*/
 
 .brands {
@@ -947,7 +984,7 @@ input::-webkit-input-placeholder {
   list-style: none;
   justify-content: flex-start;
   align-items: center;
-   margin-top: -60;
+  margin-top: -60;
   padding: 0;
 }
 
@@ -1123,7 +1160,6 @@ input::-webkit-input-placeholder {
 .section-service {
   display: flex;
   box-sizing: border-box;
-  background-color: #f1f5f7;
   min-height: 260px;
   flex-direction: column;
   align-items: flex-start;
@@ -1134,7 +1170,7 @@ input::-webkit-input-placeholder {
 }
 
 .section-service-wraper {
-  background-color: red;
+  background-color: #f1f5f7;
   width: 100%;
 }
 
