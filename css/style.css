@@ -178,11 +178,12 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form:hover::before {
-opacity: 1;
+  opacity: 1;
 }
-.search-form:active::before {
-opacity: 1;
-color: #ee3643;
+
+.search-form:focus::before {
+  opacity: 1;
+  background-color: #ee3643;
 }
 
 
@@ -1033,29 +1034,6 @@ input::-webkit-input-placeholder {
   margin-bottom: 85px;
 }
 
-.service-test-wrapper {
-  width: 100%;
-  background-color: #f1f5f7;
-  margin-bottom: 45px;
-}
-
-.service-test-container {
-  background-color: red;
-}
-
-.slider-second-headline {
-  font-family: "Cuprum", Arial, sans-serif;
-  ;
-  font-size: 36px;
-  line-height: 36px;
-  color: #000000;
-}
-
-/*.brands a:actve {
-  opacity: 0.3;
-s
-}*/
-
 .brands {
   margin: 0;
   margin-bottom: 20px;
@@ -1078,6 +1056,76 @@ s
   opacity: 0.3;
 }
 
+
+.service {
+  display: block;
+  margin: 0;
+}
+
+.service p {
+  width: 400px;
+  margin: 0;
+}
+
+.slider-service-list {
+  margin:0;
+  padding:0;
+}
+
+
+.slider-second-headline {
+  font-family: "Cuprum", Arial, sans-serif;
+  ;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+
+
+
+
+
+.service-wrapper {
+  width: 100%;
+  background-color: #f1f5f7;
+  margin-bottom: 45px;
+}
+
+.section-service {
+  display: flex;
+  box-sizing: border-box;
+  min-height: 260px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 0;
+  padding-top: 68px;
+  padding-bottom: 75px;
+}
+
+.section-service-wraper {
+  background-color: #f1f5f7;
+  width: 100%;
+}
+
+.wraper-ransport-company-partners {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0 85px;
+}
+
+.transport-company-partners {
+  width: 550px;
+
+  min-height: 370px;
+}
+
+.map {
+  width: 310px;
+
+  min-height: 370px;
+}
 
 
 /*------------catalog----------------------------------------*/
@@ -1568,44 +1616,7 @@ s
   border: none;
 }
 
-.section-service {
-  display: flex;
-  box-sizing: border-box;
-  min-height: 260px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
-  margin: 0;
-  padding-top: 68px;
-  padding-bottom: 75px;
-}
 
-.section-service-wraper {
-  background-color: #f1f5f7;
-  width: 100%;
-}
-
-/*.service {
-margin-top: 68px;
-}*/
-
-.wraper-ransport-company-partners {
-  display: flex;
-  justify-content: space-between;
-  padding: 80px 0 85px;
-}
-
-.transport-company-partners {
-  width: 550px;
-
-  min-height: 370px;
-}
-
-.map {
-  width: 310px;
-
-  min-height: 370px;
-}
 
 /*------------------------------foother------------------------------*/
 .footer-top {
