@@ -378,6 +378,8 @@ input::-webkit-input-placeholder {
 }
 
 .login-link {
+  padding-left: 48px;
+  position: relative;
   width: 120px;
   text-align: center;
 }
@@ -392,8 +394,27 @@ input::-webkit-input-placeholder {
 }
 
 .login-section .login-link {
-  margin-left: 40px;
+  padding-left: 20px;
 }
+
+.login-section .login-link::before {
+  content: "";
+  position: absolute;
+
+  top: 14px;
+  left: 25px;
+
+  width: 20px;
+  height: 20px;
+
+
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+
+
 
 .login-section a {
   display: block;
@@ -1654,6 +1675,7 @@ margin-top: 68px;
   width: 160px;
   margin-left: 140px;
 }
+
 .footer-social ul {
   display: flex;
   flex-wrap: wrap;
@@ -1676,7 +1698,7 @@ margin-top: 68px;
   width: 43px;
   height: 43px;
   background-color: #212a3a;
-  border-radius:50%;
+  border-radius: 50%;
 
 }
 
