@@ -163,7 +163,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.search-form label::before {
+.search-form::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -177,11 +177,11 @@ input[type="radio"].visually-hidden {
 
 }
 
-.search-form label:hover::before {
+.search-form:hover::before {
   opacity: 1;
 }
 
-.search-form label:active::before {
+.search-form:focus-within::before {
   background-image: url("../img/icon-search-red.svg");
 }
 
@@ -1059,7 +1059,13 @@ input::-webkit-input-placeholder {
 .service {
   display: block;
   margin: 0;
-  margin-bottom:
+
+  margin-bottom: 75px;
+
+}
+
+.service h2 {
+  margin-bottom: 35px;
 }
 
 .service p {
@@ -1067,59 +1073,140 @@ input::-webkit-input-placeholder {
   margin: 0;
 }
 
+.slider-second {
+  display: flex;
+
+
+
+}
+
 .slider-second-controls {
+  display: flex;
+  width: 240px;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
   margin: 0;
   padding: 0;
 }
 
 .slider-second-controls li {
   position: relative;
+  box-sizing: border-box;
   display: block;
   margin: 0;
-  padding: 0;
+  padding: 18px 140px 18px 20px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+
+  background-color: #32425c;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
+
 
   width: 240px;
   height: 60px;
 }
 
+.slider-second-controls li:hover {
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.slider-second-controls .active {
+  background-color: #ffffff;
+  color: #32425c;
+  border: none;
+}
+
+/*.slider-second-controls li::after {
+  content: "";
+  width: 240px;
+  height: 60px;
+display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;*/
+
+/*  background: #ffffff;
+}*/
+
 
 .slider-second-headline {
   font-family: "Cuprum", Arial, sans-serif;
-
   font-size: 36px;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
-.slider-second{
+.slider-second {
   position: relative;
+
 }
 
 .slider-second-content {
+  display: block;
   padding: 0;
-   margin: 0;
-
+  margin: 0;
 
 }
 
 .slider-second-item {
   display: none;
-
-
+  height: 280px;
+  margin-left: 70px;
+  box-shadow-left: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 }
 
 .slider-second-item:nth-child(1) {
   display: block;
 }
 
+.slider-second-item:nth-child(1) {
+  padding-right: 355px;
+  background-image: url("../img/slider-second-item-1.png");
+  background-repeat: no-repeat;
+  background-position: 95% 18px;
+}
 
+
+.slider-second-item:nth-child(2) {
+  padding-right: 255px;
+  background-image: url("../img/slider-second-item-2.png");
+  background-repeat: no-repeat;
+  background-position: 95% 18px;
+}
+
+.slider-second-item:nth-child(3) {
+  padding-right: 255px;
+  background-image: url("../img/slider-second-item-3.png");
+  background-repeat: no-repeat;
+  background-position: 200% 18px;
+}
+
+.slider-item-button {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 195px;
+  background-color: #ff5357;
+  padding: 14px 35px;
+  border-radius: 3px;
+}
 
 
 .service-wrapper {
   width: 100%;
   background-color: #f1f5f7;
   margin-bottom: 45px;
+  padding-top: 65px;
 }
 
 .section-service {
@@ -1147,16 +1234,33 @@ input::-webkit-input-placeholder {
 
 .transport-company-partners {
   width: 550px;
-
   min-height: 370px;
+}
+
+.transport-company-partners a {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 220px;
+  padding: 10px 20px;
+  border-radius: 3px;
 }
 
 .map {
   width: 310px;
-
   min-height: 370px;
 }
 
+.map-button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
 
 /*------------catalog----------------------------------------*/
 .breadcrumbs {
@@ -1473,7 +1577,8 @@ input::-webkit-input-placeholder {
 }
 
 .price-controls input {
-  width: 50px;
+  width: 90px;
+  padding: 0;
   margin: 0;
 
   color: inherit;
