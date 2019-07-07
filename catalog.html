@@ -82,9 +82,17 @@
   </header>
   <main>
     <ul class="breadcrumbs container">
-      <li><a href="index.html" area-label="Главная страница">Главная</a></li>
-      <li><a href="catalog.html" area-label="Каталог предлагаемых товаров">Катаолог</a></li>
-      <li><a href="tool.html" area-label="Каталог инструментов">Интсрумент</a></li>
+      <li>
+      </li>
+      <li>
+        <a href="index.html" area-label="Главная страница">Главная</a>
+      </li>
+      <li>
+        <a href="catalog.html" area-label="Каталог предлагаемых товаров">Катаолог</a>
+      </li>
+      <li>
+        <a href="tool.html" area-label="Каталог инструментов">Интсрумент</a>
+      </li>
       <li class="breadcrumbs-current" area-label="Текущий каталог перфораторов">Перфораторы</li>
     </ul>
     <div class="container">
@@ -99,57 +107,68 @@
     </div>
     <div class="catalog-all-items container">
       <div class="choice">
-        <!-- <div> -->
-        <div class="filteres-cost">
-          МЕСТО ДЛЯ ФОРМЫ
+        <div class="filter-range">
+          <div class="filter-range-title">Цена:</div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">
+              <input type="text" name="min-price" value="0">
+            </label>
+            <label class="max-price">
+              <input type="text" name="max-price" value="3000">
+            </label>
+          </div>
         </div>
         <section class="sorting filteres">
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <!-- </div>  -->
             <fieldset>
               <legend class="sorting-manufacturer">Производители</legend>
-              <ul>
+              <ul class="filter-option-list">
                 <li class="filter-option">
-                  <input class="sorting-item" type="checkbox" name="BOSCH" id="filter-bosch" checked>
+                  <input class="sorting-item visually-hidden filter-input filter-input-checkbox" type="checkbox" name="BOSCH" id="filter-bosch" checked>
                   <label for="filter-bosch">Bosch</label>
                 </li>
                 <li class="filter-option">
-                  <input class="sorting-item" type="checkbox" name="Интрескол" id="filter-interskol">
+                  <input class="sorting-item visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интрескол" id="filter-interskol">
                   <label for="filter-interskol">Интрескол</label>
                 </li>
                 <li class="filter-option">
-                  <input class="sorting-item" type="checkbox" name="Makita" id="filter-makita" checked>
+                  <input class="sorting-item visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Makita" id="filter-makita" checked>
                   <label for="filter-makita">Makita</label>
                 </li>
                 <li class="filter-option">
-                  <input class="sorting-item" type="checkbox" name="Dewalt" id="filter-dewalt">
+                  <input class="sorting-item visually-hidden  filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="filter-dewalt">
                   <label for="filter-dewalt">Dewalt</label>
                 </li>
                 <li class="filter-option">
-                  <input class="sorting-item" type="checkbox" name="Hitachi" id="filter-hitachi">
+                  <input class="sorting-item visually-hidden  filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="filter-hitachi">
                   <label for="filter-hitachi">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
               <legend class="sorting-feed">Питание</legend>
-              <ul>
-                <li class="sorting-item">
-                  <label>
-                    <input type="radio" name="sorting-feed-item" value="portable" checked>Аккмуляторные
-                  </label>
+              <ul class="filter-option-list">
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sorting-feed-item" value="portable" checked>
+                  <label>Аккмуляторные</label>
                 </li>
-                <li class="sorting-item">
-                  <label>
-                    <input type="radio" name="sorting-feed-item" value="stacionar">Сетевые
-                  </label>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sorting-feed-item" value="stacionar">
+                  <label>Сетевые</label>
                 </li>
               </ul>
             </fieldset>
-            <button class="button-sorting" type="submit" area-label="Показать результаты сортировки">Показать</button>
+            <button class="button button-sorting" type="submit" area-label="Показать результаты сортировки">Показать</button>
           </form>
       </div>
-      <!-- Место для формы -->
       </section>
       <section class="shop-catalog-puncher">
         <h2 class="visually-hidden">Каталог перфораторов</h2>
@@ -270,10 +289,18 @@
     </div>
     <div class="container">
       <ul class="pagination-list no-list-style">
-        <li class="pagination-item">1</li>
-        <li class="pagination-item"><a href="#" area-label="Перейти на страницу 2">2</a></li>
-        <li class="pagination-item"><a href="#" area-label="Перейти на страницу 3">3</a></li>
-        <li class="pagination-item"><a href="#" area-label="Перейти на следующую страницу">Следующая</a></li>
+        <li class="pagination-item pagination-item-current">
+          <a href="#" area-label="Перейти на страницу 1">1</a>
+        </li>
+        <li class="pagination-item">
+          <a href="#" area-label="Перейти на страницу 2">2</a>
+        </li>
+        <li class="pagination-item">
+          <a href="#" area-label="Перейти на страницу 3">3</a>
+        </li>
+        <li class="pagination-item">
+          <a href="#" area-label="Перейти на следующую страницу">Следующая</a>
+        </li>
       </ul>
     </div>
     <div class="section-service-wraper">
