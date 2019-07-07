@@ -223,26 +223,56 @@ input::-webkit-input-placeholder {
   align-items: center;
 }
 
-.marker:before {
+.marker::before {
   content: "";
   position: absolute;
-  top:10px;
-  left:30px;
+  top: 10px;
+  left: 30px;
   width: 15px;
   height: 16px;
 
-  background-image: url("../img/icon-bookmark.svg");
+  background-image: url("../img/icon-bookmark.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-color: red;
+  opacity: 0.3;
+}
+
+.marker:hover::before {
+  opacity: 1;
+}
+.marker:active::before {
+  opacity: 0.5;
 }
 
 .basket {
   display: flex;
+  position: relative;
   width: 150px;
   margin-left: 0px;
+  padding-left: 30px;
   justify-content: center;
   align-items: center;
+}
+
+.basket::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  width: 15px;
+  height: 16px;
+
+  background-image: url("../img/basket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.basket:hover::before {
+  opacity: 1;
+}
+.basket:active::before {
+  opacity: 0.5;
 }
 
 .marker:hover,
