@@ -109,22 +109,35 @@
           </div>
         </div>
         <div class="promo-list">
-          <div class="slider">
-            <ul class="slider-first">
-              <li class="slider-first-1">
-                <h3 class="slider-first-headline">Дрели</h3>
-                <p>Соседям на радость!</p>
-                <a class="button" href="catalog.html" area-label="Каталог товаров">Открыть каталог</a>
-              </li>
-              <li class="slider-first-2">
+          <input class="visually-hidden" type="radio" id="slider-first-item-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="slider-first-item-2" name="toggle">
+          <div class="slider-first">
+            <div class="slider-first-controls">
+              <label for="slider-first-item-1" area-label="Показать первый слайд">Первый</label>
+              <label for="slider-first-item-2" area-label="Показать второй слайд">Второй</label>
+            </div>
+            <ul class="slider-first-list no-list-style">
+              <li class="slider-first-item slide" id="slide-first-1">
                 <h3 class="slider-first-headline">Перфораторы</h3>
                 <p>Настоящие мужские игрушки</p>
+                <div class="button-slider-first">
+                  <button class="button-back" type="button" aria-label="Перейти на следующий слайд"></button>
+                  <!-- <span class="slider-first-arr slider-first-arr-prev"></span> -->
+                  <button class="button-next" type="button" aria-label="Перейти на предыдущий слайд"></button>
+                </div>
+                <a class="button" href="catalog.html" area-label="Каталог товаров">Открыть каталог</a>
+              </li>
+              <li class="slider-first-item slide" id="slide-first-2">
+                <h3 class="slider-first-headline">Дрели</h3>
+                <p>Соседям на радость!</p>
+                <div class="button-slider-first">
+                  <button class="button-back" type="button" aria-label="Перейти на следующий слайд"></button>
+                  <!-- <span class="slider-first-arr slider-first-arr-prev"></span> -->
+                  <button calass="button-next" type="button" aria-label="Перейти на предыдущий слайд"></button>
+                </div>
                 <a class="button" href="catalog.html" area-label="Каталог товаров">Открыть каталог</a>
               </li>
             </ul>
-            <button class="button-back" type="button" aria-label="Перейти на следующий слайд"></button>
-            <!-- <span class="slider-first-arr slider-first-arr-prev"></span> -->
-            <button calass="button-next" type="button" aria-label="Перейти на предыдущий слайд"></button>
             <!-- <span class="slider-first-arr slider-first-arr-next"></span> -->
           </div>
           <div class="item-column">
@@ -205,7 +218,7 @@
     <section class="popular-brands container">
       <div class="popular-wraper">
         <div class="container-headline">
-          <h2 class="headline">Производители:</h2>
+          <h2 class="headline">Популярные производители:</h2>
         </div>
         <a class="button" href="all-brends.html" area-label="Каталог всех производителей предсвталенных в магазине">Все производители</a>
       </div>
